@@ -41,6 +41,8 @@ for example, you can put this row at the end of the file.
 
 3 file zend2_simple_sample.conf which created in step 2 contains following content:
 
+###########################
+
 <VirtualHost *:80>
 
 ServerName zend2_simple_sample
@@ -61,7 +63,9 @@ LogLevel warn
 
 </VirtualHost>
 
-the path /var/www/zend2_simple_sample means that the folder zend2_simple_sample is under /var/www
+###############################
+
+# the path /var/www/zend2_simple_sample means that the folder zend2_simple_sample is under /var/www
 
 4. install apache and php
 
