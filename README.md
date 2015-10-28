@@ -1,4 +1,4 @@
-ZendSkeletonApplication
+Simple Website based on Zend2 (The ZendSkeletonApplication from http://framework.zend.com/)
 =======================
 
 Introduction
@@ -82,4 +82,7 @@ add following line into  /etc/hosts
 127.0.0.1 zend2_simple_sample
 
 
+7.
+the website is running now under http://zend2_simple_sample 
 
+![alt tag](https://raw.github.com/username/projectname/branch/path/to/img.png)
