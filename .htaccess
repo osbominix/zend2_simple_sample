@@ -1,0 +1,16 @@
+# Do not remove this line, otherwise mod_rewrite rules will stop working
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^\.htaccess$ - [F]
+ 
+RewriteCond %{REQUEST_URI} =""
+RewriteRule ^.*$ /zend2_simple_sample/public/index.php [NC,L]
+ 
+RewriteCond %{REQUEST_URI} !^/zend2_simple_sample/public/.*$
+RewriteRule ^(.*)$ /zend2_simple_sample/public/$1
+ 
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^.*$ - [NC,L]
+ 
+RewriteRule ^zend2_simple_sample/public/.*$ /zend2_simple_sample/public/index.php [NC,L]
